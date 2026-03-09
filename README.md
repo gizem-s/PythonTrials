@@ -34,33 +34,56 @@ python3 create_data.py
 ```
 Bu komut `sales_data.csv` dosyasını 100 satırlık random veri ile oluşturur.
 
-### Adım 2: Basit Grafikler Oluştur
+### Adım 2: İnteraktif Grafik Seçer Kullan
 ```bash
-python3 generate_charts.py
+python3 interactive_charts.py [grafik_adi]
 ```
-6 farklı grafik türünü oluşturur:
-- Line Chart (Satış & Gider Trendi)
-- Bar Chart (Kategoriye Göre Satış)
-- Histogram (Satış Dağılımı)
-- Scatter Plot (Müşteri vs Satış)
-- Pie Chart (Bölge Dağılımı)
-- Box Plot (Bölgesel Analiz)
 
-### Adım 3: Gelişmiş Grafikler Oluştur
+#### 🎯 Temel Grafikler (6):
 ```bash
-python3 advanced_charts.py
+python3 interactive_charts.py line_chart       # Zaman serisine göre trend
+python3 interactive_charts.py bar_chart        # Kategori/bölge karşılaştırması
+python3 interactive_charts.py histogram        # Değişken dağılımı
+python3 interactive_charts.py scatter_plot     # İki değişken ilişkisi
+python3 interactive_charts.py pie_chart        # Yüzdelik dağılım
+python3 interactive_charts.py box_plot         # Dörtlü analiz
 ```
-10 farklı ileri grafik türünü oluşturur:
-- Heatmap
-- Violin Plot
-- 3D Scatter Plot
-- KDE Distributions
-- Correlation Heatmap
-- Stacked Bar Chart
-- Multi-Level Pie Charts
-- Hexbin Plot
-- Grouped Bar Chart
-- Waterfall Chart
+
+#### 📈 İleri Grafikler (6):
+```bash
+python3 interactive_charts.py heatmap          # Kategorik ilişkiler
+python3 interactive_charts.py violin_plot      # Dağılım şekli
+python3 interactive_charts.py scatter_3d       # Üç değişken analizi
+python3 interactive_charts.py kde_plot         # Yoğunluk tahmini
+python3 interactive_charts.py hexbin_plot      # 2D yoğunluk
+python3 interactive_charts.py waterfall_chart  # Satış/gider/kar akışı
+```
+
+#### 🎨 Köşeli Grafikler (6):
+```bash
+python3 interactive_charts.py stacked_bar      # Yığılı çubuklar
+python3 interactive_charts.py grouped_bar      # Gruplandırılmış çubuklar
+python3 interactive_charts.py area_chart       # Alan grafiği
+python3 interactive_charts.py density_contour  # Yoğunluk konturları
+python3 interactive_charts.py correlation_matrix # Korelasyon tablosu
+python3 interactive_charts.py swarm_plot       # Veri noktaları çiçeği
+```
+
+#### 📊 Özet Grafikler (1):
+```bash
+python3 interactive_charts.py dashboard        # Hepsi bir arada
+```
+
+#### 🔄 Tüm Grafikleri Oluştur (19):
+```bash
+python3 interactive_charts.py all
+```
+
+### Adım 3 (İsteğe Bağlı): Eski Script'ler
+```bash
+python3 generate_charts.py       # 6 basit grafik
+python3 advanced_charts.py       # 10 gelişmiş grafik
+```
 
 ## 📊 Grafikler Hakkında
 
