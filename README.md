@@ -74,10 +74,21 @@ python3 interactive_charts.py swarm_plot       # Veri noktaları çiçeği
 python3 interactive_charts.py dashboard        # Hepsi bir arada
 ```
 
-#### 🔄 Tüm Grafikleri Oluştur (19):
+### Adım 3: İstatistiksel Anlamlılık Grafikleri Oluştur
+```bash
+python3 interactive_charts.py statistical_significance_demo
+```
+Bu komut istatistiksel anlamlılık gösteren kapsamlı bir grafik oluşturur:
+- T-Test karşılaştırmaları
+- Güven aralıkları
+- p-Value ısı haritası
+- İstatistiksel yorumlar
+
+### Adım 4: Tüm Grafikleri Bir Kerede Oluştur
 ```bash
 python3 interactive_charts.py all
 ```
+25 farklı grafik türünü otomatik olarak oluşturur.
 
 ### Adım 3 (İsteğe Bağlı): Eski Script'ler
 ```bash
