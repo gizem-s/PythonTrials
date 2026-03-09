@@ -142,4 +142,5 @@ Thumbs.db
 *.csv
 output/
 results/
+charts/
 
