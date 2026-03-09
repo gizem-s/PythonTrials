@@ -134,3 +134,12 @@ dmypy.json
 .DS_Store
 Thumbs.db
 
+# Proje çıktıları ve görüntüler
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.csv
+output/
+results/
+
